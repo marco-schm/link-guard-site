@@ -51,6 +51,8 @@ def main(checkout: Path, out: Path) -> None:
     (out / "fonts").mkdir()
     shutil.copyfile(src / "fonts" / "OFL.txt", out / "fonts" / "OFL.txt")
     shutil.copyfile(src / "favicon.ico", out / "favicon.ico")
+    for name in ("robots.txt", "sitemap.xml"):
+        shutil.copyfile(src / name, out / name)
     print(f"built {len(pages)} pages")
 
 

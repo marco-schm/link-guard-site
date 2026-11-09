@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The landing page and the Thunderbird documentation. Update the list when a
+     documentation page is added or removed. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://link-guard.nullringresearch.de/</loc></url>
+  <url><loc>https://link-guard.nullringresearch.de/thunderbird/</loc></url>
+  <url><loc>https://link-guard.nullringresearch.de/thunderbird/getting-started.html</loc></url>
+  <url><loc>https://link-guard.nullringresearch.de/thunderbird/using-link-guard.html</loc></url>
+  <url><loc>https://link-guard.nullringresearch.de/thunderbird/approvals-and-blocks.html</loc></url>
+  <url><loc>https://link-guard.nullringresearch.de/thunderbird/warnings.html</loc></url>
+  <url><loc>https://link-guard.nullringresearch.de/thunderbird/warning-rules.html</loc></url>
+  <url><loc>https://link-guard.nullringresearch.de/thunderbird/lists.html</loc></url>
+  <url><loc>https://link-guard.nullringresearch.de/thunderbird/settings.html</loc></url>
+  <url><loc>https://link-guard.nullringresearch.de/thunderbird/privacy.html</loc></url>
+  <url><loc>https://link-guard.nullringresearch.de/thunderbird/security.html</loc></url>
+  <url><loc>https://link-guard.nullringresearch.de/thunderbird/faq.html</loc></url>
+  <url><loc>https://link-guard.nullringresearch.de/thunderbird/troubleshooting.html</loc></url>
+  <url><loc>https://link-guard.nullringresearch.de/thunderbird/development.html</loc></url>
+</urlset>

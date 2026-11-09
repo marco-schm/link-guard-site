@@ -1,10 +1,9 @@
 # Link Guard website
 
 Source of [link-guard.nullringresearch.de](https://link-guard.nullringresearch.de/): the
-landing page for Link Guard. The documentation under `/thunderbird/` and `/outlook/` is
-built from the signed releases of
-[thunderbird-link-guard](https://github.com/marco-schm/thunderbird-link-guard) and
-[outlook-link-guard](https://github.com/marco-schm/outlook-link-guard).
+landing page for Link Guard. The documentation under `/thunderbird/` is built from the
+signed releases of
+[thunderbird-link-guard](https://github.com/marco-schm/thunderbird-link-guard).
 
 ```sh
 python3 -I build.py . out    # builds the static pages into out/
@@ -12,8 +11,7 @@ python3 -I build.py . out    # builds the static pages into out/
 
 The pages contain no JavaScript, no cookies and no third-party requests; fonts, styles
 and the logo are inlined so the site works under a Content-Security-Policy of
-`default-src 'none'`. `src/_outlook/` is shown under `/outlook/` until Link Guard for
-Outlook has its first release.
+`default-src 'none'`.
 
 ## Releases
 

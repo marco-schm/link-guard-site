@@ -6,8 +6,7 @@ Usage: build.py <checkout> <output dir>
 <checkout> is the repository root (or a `git archive` of it) containing `src/`. Every
 HTML page gets the fonts, the stylesheet and the shared header, footer and logo inlined,
 because the site's Content-Security-Policy allows no external stylesheets and no
-scripts. `src/_outlook/` is the placeholder that the server shows under /outlook/ until
-Link Guard for Outlook has its first release.
+scripts.
 """
 import shutil
 import sys
@@ -48,10 +47,6 @@ def main(checkout: Path, out: Path) -> None:
         target = out / page.relative_to(src)
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(text, encoding="utf-8")
-    # /outlook/ shows the placeholder until the first Outlook release; its 404 page is the
-    # landing page's, whose links are absolute.
-    if (out / "_outlook").is_dir():
-        shutil.copyfile(out / "404.html", out / "_outlook" / "404.html")
     shutil.copytree(src / "assets", out / "assets")
     (out / "fonts").mkdir()
     shutil.copyfile(src / "fonts" / "OFL.txt", out / "fonts" / "OFL.txt")

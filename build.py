@@ -48,6 +48,10 @@ def main(checkout: Path, out: Path) -> None:
         target = out / page.relative_to(src)
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(text, encoding="utf-8")
+    # /outlook/ shows the placeholder until the first Outlook release; its 404 page is the
+    # landing page's, whose links are absolute.
+    if (out / "_outlook").is_dir():
+        shutil.copyfile(out / "404.html", out / "_outlook" / "404.html")
     shutil.copytree(src / "assets", out / "assets")
     (out / "fonts").mkdir()
     shutil.copyfile(src / "fonts" / "OFL.txt", out / "fonts" / "OFL.txt")

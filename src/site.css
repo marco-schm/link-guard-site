@@ -162,6 +162,7 @@ figcaption{padding:10px 14px;font-size:13px;color:#5b6779;background:#f4f7fb;bor
 .small{font-size:14px;color:var(--muted)}
 
 /* Security */
+#security h2{margin-bottom:32px}
 .sec-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 @media (max-width:860px){.sec-grid{grid-template-columns:minmax(0,1fr)}}
 

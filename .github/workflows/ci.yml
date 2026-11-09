@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - run: python3 -I build.py . out
+      - name: No scripts and no external resources in the built pages
+        run: |
+          if grep -rIl --include='*.html' -e '<script' -e 'src="http' -e 'url(http' out; then
+            echo "::error::a page loads a script or an external resource"; exit 1
+          fi

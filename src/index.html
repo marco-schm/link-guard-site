@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Link Guard — check every link before you click</title>
+<meta name="description" content="Link Guard shows where every link in an email really leads, warns about lookalike domains, misleading link text and hidden redirects, and keeps your decisions on your computer. Free and open source for Thunderbird and Outlook.">
+<meta name="author" content="Marco Schmitt, NULLRING Research">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f141b" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Link Guard">
+<meta property="og:title" content="Link Guard — check every link before you click">
+<meta property="og:description" content="Phishing warnings for Thunderbird and Outlook. Free, open source, nothing uploaded.">
+<meta property="og:url" content="https://link-guard.nullringresearch.de/">
+<meta property="og:image" content="https://link-guard.nullringresearch.de/assets/mark-256.png">
+<link rel="canonical" href="https://link-guard.nullringresearch.de/">
+<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="/assets/mark.svg" type="image/svg+xml">
+<style>
+/* @fonts */
+/* @css */
+</style>
+</head>
+<body>
+<!-- @symbol -->
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- @header -->
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Free &amp; open source · Thunderbird and Outlook</p>
+        <h1 id="hero-title">See where a link <span class="accent">really</span> goes. Before you click.</h1>
+        <p class="lead">Phishing needs just one click. Link Guard shows the real destination of every link in your email, warns you about lookalike domains, misleading link text and hidden redirects, and keeps every decision on your own computer.</p>
+        <div class="cta">
+          <a class="btn primary" href="/thunderbird/getting-started.html"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3v10m-4-4 4 4 4-4M4 16h12"/></svg>Get it for Thunderbird</a>
+          <a class="btn" href="/outlook/">Outlook preview</a>
+        </div>
+        <ul class="facts">
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 10.5 3 3 7-7"/></svg>No telemetry</li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 10.5 3 3 7-7"/></svg>Nothing uploaded</li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 10.5 3 3 7-7"/></svg>MIT licensed</li>
+        </ul>
+      </div>
+
+      <div class="demo" role="img" aria-label="Example: an email asks the reader to sign in at example.org, but the link leads to www.examp1e.org. Link Guard keeps the link inactive and warns that the domain looks like example.org and that the link text names a different site.">
+        <div class="mail" aria-hidden="true">
+          <div class="mail-bar"><i></i><i></i><i></i><span>Inbox — Action required: confirm your account</span></div>
+          <div class="mail-head"><strong>Action required: confirm your account</strong>Example Account Team &lt;no-reply@example.net&gt;</div>
+          <div class="mail-body">
+            <p>Hello,</p>
+            <p>we noticed unusual activity. Please <span class="dead">sign in at example.org</span><span class="tag">⚠ Lookalike</span> within 24 hours to keep your account.</p>
+            <p>Thank you,<br>Your Account Team</p>
+          </div>
+        </div>
+        <div class="notice" aria-hidden="true">
+          <div class="notice-head"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#lg-mark"/></svg>Link Guard · 1 warning</div>
+          <div class="host"><span>www.<b>examp1e.org</b></span><span class="badge">Not approved</span></div>
+          <p class="risk"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M10.3 3.9a2 2 0 0 1 3.4 0l8.4 14.6a2 2 0 0 1-1.7 3H3.6a2 2 0 0 1-1.7-3z"/><path d="M12 9v5.2" stroke="var(--danger-tint)" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="17.6" r="1.4" fill="var(--danger-tint)"/></svg>Resembles example.org, a domain you trust.</p>
+          <p class="risk"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M10.3 3.9a2 2 0 0 1 3.4 0l8.4 14.6a2 2 0 0 1-1.7 3H3.6a2 2 0 0 1-1.7-3z"/><path d="M12 9v5.2" stroke="var(--danger-tint)" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="17.6" r="1.4" fill="var(--danger-tint)"/></svg>Link text and destination differ.</p>
+          <div class="notice-actions"><span>Allow once</span><span>Allow permanently</span><span class="block">Block</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="wrap">
+      <ul>
+        <li><b>0 bytes</b><span>of your mail sent anywhere</span></li>
+        <li><b>8 checks</b><span>plus your own warning rules</span></li>
+        <li><b>20 languages</b><span>following Thunderbird’s language</span></li>
+        <li><b>Signed</b><span>every release, with a hardware key</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="block" id="features" aria-labelledby="features-title">
+    <div class="wrap">
+      <p class="kicker">What it catches</p>
+      <h2 id="features-title">The tricks phishing mail relies on, made visible.</h2>
+      <p class="intro">Link Guard reads every link the way your mail app would open it, then tells you plainly what is off. Each warning can be switched off, and you can add your own.</p>
+      <div class="grid">
+        <article class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="12" r="5"/><circle cx="15" cy="12" r="5"/></svg></span><h3>Lookalike domains</h3><p><span class="mono">examp1e.org</span> next to <span class="mono">example.org</span>, or letters from other alphabets that look the same.</p></article>
+        <article class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h10M4 12h7M4 17h10"/><path d="m16 10 4 4m0-4-4 4"/></svg></span><h3>Misleading link text</h3><p>The text says one site, the link leads to another. Link Guard compares both.</p></article>
+        <article class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h10m-4-4 4 4-4 4"/><path d="M19 5v14"/></svg></span><h3>Hidden redirects</h3><p>Links that carry another address inside them, from open redirects to Safe Links and URL Defense wrappers.</p></article>
+        <article class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 12h8"/><path d="M10 8H8a4 4 0 0 0 0 8h2m4-8h2a4 4 0 0 1 0 8h-2"/></svg></span><h3>Short links</h3><p>Public URL shorteners hide where you will land. They can only be opened for one message at a time.</p></article>
+        <article class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 8-4 4 4 4m8-8 4 4-4 4M14 5l-4 14"/></svg></span><h3>Code in links</h3><p>Script or HTML hidden in a link to a site you trust — the shape of a cross-site scripting attack.</p></article>
+        <article class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span><h3>Credentials &amp; raw IPs</h3><p>User names or passwords inside a link, and bare IP addresses instead of a site name.</p></article>
+        <article class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h9"/><path d="m17 16 2 2 3-4"/></svg></span><h3>Allow- and blocklists</h3><p>Import up to 20 lists of 5,000 hosts. Remote blocklists update daily, within strict limits.</p></article>
+        <article class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3m0 12v3M3 12h3m12 0h3"/><circle cx="12" cy="12" r="4"/></svg></span><h3>Your own rules</h3><p>Warn on any pattern in the host, the address or the link text — on an engine that cannot freeze your mail.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block alt" id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <p class="kicker">How it works</p>
+      <h2 id="how-title">Nothing opens until you have looked.</h2>
+      <p class="intro">No list of “safe” sites is bundled. You decide which sites you trust, and Link Guard holds you to it.</p>
+      <ol class="steps">
+        <li><h3>Links wait for you</h3><p>In Thunderbird, web links in a message stay inactive until their destination is approved. In Outlook, a pane next to the message checks every link.</p></li>
+        <li><h3>You see the real destination</h3><p>A compact notice lists every site the message links to, with the registrable domain highlighted and every warning spelled out.</p></li>
+        <li><h3>Approve once, or for good</h3><p>Allow a site for this message, for always, or a whole domain with its subdomains. A block always wins.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block" id="privacy" aria-labelledby="privacy-title">
+    <div class="wrap split">
+      <div>
+        <p class="kicker">Private by design</p>
+        <h2 id="privacy-title">Your mail never leaves your computer.</h2>
+        <ul class="checks">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 3 3 5-6"/></svg><div><b>Checked locally</b><span>Every check runs inside your mail app. No cloud service, no scanning server, no account.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 3 3 5-6"/></svg><div><b>No telemetry</b><span>No analytics, no tracking, no update pings. The developer receives nothing.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 3 3 5-6"/></svg><div><b>Minimal permissions</b><span>Read the displayed message, store your settings. No host permissions.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 3 3 5-6"/></svg><div><b>Network only when you ask</b><span>The only requests go to list addresses you add yourself.</span></div></li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <img src="/assets/thunderbird-notice.png" width="1800" height="1581" loading="lazy" alt="Link Guard notice in Thunderbird listing five hosts, with warnings for a lookalike domain, misleading link text and a short link.">
+        <figcaption>Link Guard in Thunderbird. Synthetic message, reserved example domains.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="block alt" id="get" aria-labelledby="get-title">
+    <div class="wrap">
+      <p class="kicker">Get Link Guard</p>
+      <h2 id="get-title">Pick your mail app.</h2>
+      <p class="intro">Same checks, same rules, same promise. Free and open source under the MIT license.</p>
+      <div class="products">
+        <article class="product">
+          <div class="product-head"><h3>Thunderbird</h3><span class="status ok">Available</span></div>
+          <p>Links stay inactive right in the message until you approve their destination.</p>
+          <ul>
+            <li>Thunderbird 151 or newer</li>
+            <li>Notice above the message, labels next to each link</li>
+            <li>20 languages</li>
+          </ul>
+          <div class="cta">
+            <a class="btn primary" href="https://github.com/marco-schm/thunderbird-link-guard/releases/latest">Download</a>
+            <a class="btn" href="/thunderbird/">Documentation</a>
+          </div>
+        </article>
+        <article class="product">
+          <div class="product-head"><h3>Outlook</h3><span class="status pre">Preview</span></div>
+          <p>A pinned pane next to the message checks every link and opens it only after you approve.</p>
+          <ul>
+            <li>New Outlook, classic Outlook, Outlook on the web</li>
+            <li>Microsoft 365, Exchange and Outlook.com accounts</li>
+            <li>Outlook does not let add-ins switch off links inside the message itself</li>
+          </ul>
+          <div class="cta">
+            <a class="btn" href="/outlook/">Documentation</a>
+            <a class="btn" href="https://github.com/marco-schm/outlook-link-guard">Source</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="security" aria-labelledby="security-title">
+    <div class="wrap">
+      <p class="kicker">Built like a security tool</p>
+      <h2 id="security-title">Made by a vulnerability researcher.</h2>
+      <p class="intro">Link Guard comes from <a href="https://nullringresearch.de/">NULLRING Research</a>, an independent lab for operating-system security research. It is built to the standard that research holds other software to.</p>
+      <div class="sec-grid">
+        <article class="card"><h3>Untrusted input stays untrusted</h3><p>Mail is parsed without running scripts. Imported lists are size-bounded, validated, shown for review and start disabled. Blocklists can only take access away.</p></article>
+        <article class="card"><h3>No catastrophic regex</h3><p>Warning rules run on a small linear-time engine, not JavaScript's backtracking one, so no pattern can freeze your mail app.</p></article>
+        <article class="card"><h3>Signed releases</h3><p>Every release is built only from a tag signed with a hardware security key, and the signature is checked before anything is published.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block alt" id="faq" aria-labelledby="faq-title">
+    <div class="wrap faq">
+      <p class="kicker">Questions</p>
+      <h2 id="faq-title">Good to know.</h2>
+      <details><summary>Is Link Guard a virus scanner?</summary><p>No. It is a warning aid for links. An approved site can still serve harmful content, and attachments, QR codes and links inside images are outside its checks. Use it together with your usual protection.</p></details>
+      <details><summary>Why is there no list of safe sites built in?</summary><p>Because any such list would decide for you and could be wrong for you. You approve the sites you actually use; imported lists are optional and always shown for review first.</p></details>
+      <details><summary>Does it slow down my mail?</summary><p>No. Checks take milliseconds, even with 20 imported lists of 5,000 hosts each.</p></details>
+      <details><summary>What does it cost?</summary><p>Nothing. Link Guard is free and open source under the MIT license, with no ads and no paid tier.</p></details>
+      <details><summary>How do I report a security problem?</summary><p>Privately, through GitHub's vulnerability reporting, as described in the <a href="https://github.com/marco-schm/thunderbird-link-guard/blob/main/SECURITY.md">security policy</a>.</p></details>
+    </div>
+  </section>
+
+  <section class="final" aria-labelledby="final-title">
+    <div class="wrap">
+      <h2 id="final-title">Look before you click.</h2>
+      <p>Install Link Guard in a minute. It stays out of your way until a link deserves a second look.</p>
+      <div class="cta">
+        <a class="btn primary" href="/thunderbird/getting-started.html">Get it for Thunderbird</a>
+        <a class="btn" href="/outlook/">Outlook preview</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- @footer -->
+</body>
+</html>
